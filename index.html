@@ -3,117 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neupane Law House | Law Firm in Kathmandu, Nepal</title>
-    <meta name="description" content="Neupane Law House in Anamnagar, Kathmandu provides expert legal representation, litigation, corporate law, and advisory services in Nepal with 12+ years of experience.">
+    <title>Neupane Law House | Kathmandu, Nepal</title>
     <style>
         :root {
+            --navy: #0f172a;
             --gold: #b69a62;
-            --gold-dark: #92743e;
-            --gold-light: #eee3cb;
             --cream: #faf8f3;
             --white: #ffffff;
-            --navy: #0f172a;
             --text: #334155;
         }
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            margin: 0;
-            background-color: var(--cream);
+        body { 
+            font-family: system-ui, -apple-system, sans-serif; 
+            line-height: 1.6; 
+            color: var(--text); 
+            margin: 0; 
+            background-color: var(--cream); 
         }
-        header {
-            background: var(--navy);
-            color: var(--white);
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+        header { 
+            background: var(--navy); 
+            color: var(--white); 
+            padding: 1rem; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
         }
-        .logo-box { font-size: 1.3rem; font-weight: bold; }
-        nav ul { list-style: none; display: flex; gap: 15px; margin: 0; padding: 0; }
-        nav a { color: var(--white); text-decoration: none; font-size: 0.9rem; }
-        .hero {
-            text-align: center;
-            padding: 60px 5%;
-            background: linear-gradient(135deg, var(--navy), #1e293b);
-            color: var(--white);
+        nav ul { 
+            list-style: none; 
+            display: flex; 
+            gap: 15px; 
+            margin: 0; 
+            padding: 0; 
         }
-        .hero h1 { color: var(--gold-light); font-size: 2.2rem; margin-bottom: 10px; }
-        .hero p { font-size: 1.1rem; max-width: 600px; margin: 0 auto 20px; }
-        .cta-btn {
-            display: inline-block;
-            background: var(--gold);
-            color: var(--white);
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
+        nav a { 
+            color: var(--white); 
+            text-decoration: none; 
+            font-size: 0.9rem;
         }
-        .whatsapp-btn {
-            display: inline-block;
-            background: #25D366;
-            color: var(--white);
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-left: 10px;
+        .hero { 
+            text-align: center; 
+            padding: 50px 20px; 
+            background: var(--navy); 
+            color: var(--white); 
         }
-        .container { padding: 40px 5%; max-width: 1100px; margin: 0 auto; }
-        h2 { text-align: center; color: var(--navy); margin-bottom: 30px; }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+        .hero h1 { color: #eee3cb; margin-bottom: 10px; }
+        .cta-btn { 
+            display: inline-block; 
+            background: var(--gold); 
+            color: white; 
+            padding: 12px 20px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            margin: 5px; 
         }
-        .card {
-            background: var(--white);
-            padding: 20px;
-            border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            border-top: 3px solid var(--gold);
+        .whatsapp-btn { 
+            display: inline-block; 
+            background: #25D366; 
+            color: white; 
+            padding: 12px 20px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            margin: 5px; 
         }
-        .card h3 { color: var(--navy); margin-top: 0; }
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            text-align: center;
+        .container { 
+            padding: 30px 20px; 
+            max-width: 1000px; 
+            margin: 0 auto; 
         }
-        .team-card img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid var(--gold);
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+            gap: 20px; 
         }
-        .contact-info {
-            background: var(--navy);
-            color: var(--white);
-            padding: 30px;
-            border-radius: 8px;
-            margin-top: 40px;
+        .card { 
+            background: var(--white); 
+            padding: 20px; 
+            border-radius: 6px; 
+            border-top: 3px solid var(--gold); 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
         }
-        .contact-info a { color: var(--gold-light); text-decoration: none; font-weight: bold; }
-        footer { text-align: center; padding: 20px; background: #020617; color: #94a3b8; font-size: 0.85rem; }
-        @media (max-width: 600px) {
-            header { flex-direction: column; gap: 10px; }
-            .hero h1 { font-size: 1.7rem; }
-            .whatsapp-btn { margin-left: 0; margin-top: 10px; display: block; }
+        .team-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 20px; 
+            margin-top: 20px; 
+        }
+        .team-card { 
+            background: var(--white); 
+            padding: 20px; 
+            border-radius: 8px; 
+            text-align: center; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        .team-card img { 
+            width: 130px; 
+            height: 130px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 3px solid var(--gold); 
+            margin-bottom: 12px; 
+            display: block; 
+        }
+        .team-card h3 { 
+            margin: 5px 0; 
+            color: var(--navy); 
+            font-size: 1.1rem;
+        }
+        .team-card p { 
+            margin: 0; 
+            color: var(--gold); 
+            font-weight: bold; 
+        }
+        .contact-info { 
+            background: var(--navy); 
+            color: var(--white); 
+            padding: 35px 20px; 
+            border-radius: 8px; 
+            text-align: center; 
+        }
+        .contact-info a { 
+            color: #eee3cb; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+        footer { 
+            text-align: center; 
+            padding: 20px; 
+            background: #020617; 
+            color: #94a3b8; 
+            font-size: 0.8rem; 
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="logo-box">⚖ Neupane Law House</div>
+        <div style="font-weight:bold; font-size:1.2rem;">⚖ Neupane Law House</div>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -123,41 +154,31 @@
 
     <section class="hero">
         <h1>Committed to Justice. Dedicated to Truth.</h1>
-        <p lang="ne">न्याय, सत्य र कानूनी सेवाप्रति समर्पित</p>
-        <p>12+ Years of Trusted Legal Advocacy in Kathmandu, Nepal</p>
+        <p>न्याय, सत्य र कानूनी सेवाप्रति समर्पित</p>
+        <p>12+ Years of Trusted Legal Practice in Kathmandu, Nepal</p>
         <a href="tel:+9779851090798" class="cta-btn">📞 Call: +977 9851090798</a>
-        <a href="https://wa.me" target="_blank" rel="noopener" class="whatsapp-btn">💬 WhatsApp Us</a>
+        <a href="https://wa.me" target="_blank" class="whatsapp-btn">💬 WhatsApp Us</a>
     </section>
 
-    <div class="container" id="about">
-        <h2>A Strong Pillar for Access to Justice</h2>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">
-            Neupane Law House (न्यौपाने ल हाउस) handles judicial and quasi-judicial proceedings, legal drafting, public interest litigation, mediation, and corporate legal advisory solutions with complete transparency and integrity.
-        </p>
-    </div>
-
     <div class="container" id="services">
-        <h2>Comprehensive Legal Services</h2>
+        <h2 style="text-align:center; color:var(--navy); margin-bottom:30px;">Our Legal Services</h2>
         <div class="grid">
-            <div class="card"><h3>1. Litigation & Representation</h3><p>Pleading and case preparation before District Courts, High Courts, and the Supreme Court of Nepal.</p></div>
-            <div class="card"><h3>2. Legal Drafting & Research</h3><p>Drafting contracts, deeds, petitions, and producing specialized regulatory advisory opinions.</p></div>
-            <div class="card"><h3>3. Public Interest Litigation</h3><p>Legal initiatives involving public health, social justice, consumer safety, and community rights.</p></div>
-            <div class="card"><h3>4. Mediation & Arbitration</h3><p>Structured dispute resolution alternatives to resolve civic, family, and commercial matters efficiently.</p></div>
-            <div class="card"><h3>5. Corporate & Business Law</h3><p>Setup solutions, statutory compliance management, commercial agreement architectures, and advisory.</p></div>
-            <div class="card"><h3>6. Tax & Financial Law</h3><p>Strategic counseling regarding fiscal compliance structures, investments, and revenue dispute representations.</p></div>
-            <div class="card"><h3>7. Legal Counseling</h3><p>Rights-based consultation services for domestic, commercial, and organizational legal issues.</p></div>
-            <div class="card"><h3>8. Notarial Services</h3><p>Document validations, certifications, and verification processing via certified legal professionals.</p></div>
-            <div class="card"><h3>9. Social Justice Issues</h3><p>Legal aid, advocacy campaigns against structural inequalities, and defending foundational human rights.</p></div>
+            <div class="card"><h3>1. Litigation & Representation</h3><p>Case preparation and pleading before District Courts, High Courts, and the Supreme Court.</p></div>
+            <div class="card"><h3>2. Legal Drafting & Research</h3><p>Expert drafting of contracts, business deeds, court petitions, and statutory legal research.</p></div>
+            <div class="card"><h3>3. Corporate & Business Law</h3><p>Company setup solutions, compliance handling, and strategic commercial advisory programs.</p></div>
+            <div class="card"><h3>4. Mediation & Arbitration</h3><p>Alternative structures to resolve civil, commercial, and household disputes peacefully.</p></div>
+            <div class="card"><h3>5. Public Interest Litigation</h3><p>Advocacy for social justice, community rights, public health, and consumer protection frameworks.</p></div>
+            <div class="card"><h3>6. Legal Counseling</h3><p>Professional consultative guidance for corporate compliance, private individuals, and organizations.</p></div>
         </div>
     </div>
 
     <div class="container" id="team">
-        <h2>Meet Our Advocates</h2>
+        <h2 style="text-align:center; color:var(--navy); margin-bottom:30px;">Meet Our Advocates</h2>
         <div class="team-grid">
             <div class="team-card">
                 <img src="image.jpg1.jpg" alt="Advocate Dilli Prasad Neupane">
                 <h3>Adv. Dilli Prasad Neupane</h3>
-                <p>Advocate / Founder</p>
+                <p>Founder / Advocate</p>
             </div>
             <div class="team-card">
                 <img src="image.jpg2.jpg" alt="Advocate Gokarna Baruwal">
@@ -180,17 +201,14 @@
     <div class="container" id="contact">
         <div class="contact-info">
             <h2>Contact Our Office</h2>
-            <p><strong>Address:</strong> Hanumanthan, Anamnagar, Kathmandu, Ward No. 29, Nepal (Near Vetghat Restaurant)</p>
-            <p><strong>Phone:</strong> <a href="tel:+9779851090798">+977 9851090798</a></p>
-            <p><strong>Email:</strong> <a href="mailto:neupanelawhouse88@gmail.com">neupanelawhouse88@gmail.com</a></p>
-            <p style="margin-top:20px;">
-                <a href="https://google.com" target="_blank" rel="noopener" style="background:var(--gold); padding:8px 15px; border-radius:4px; color:white; font-size:0.9rem;">📍 Open Maps Location</a>
-            </p>
+            <p><strong>Office Location:</strong> Hanumanthan, Anamnagar, Kathmandu, Ward 29, Nepal (Near Vetghat Restaurant)</p>
+            <p><strong>Mobile Hotline:</strong> <a href="tel:+9779851090798">+977 9851090798</a></p>
+            <p><strong>Email Address:</strong> <a href="mailto:neupanelawhouse88@gmail.com">neupanelawhouse88@gmail.com</a></p>
         </div>
     </div>
 
     <footer>
-        <p>© Neupane Law House. All Rights Reserved. Professional Legal Services | Kathmandu, Nepal</p>
+        <p>© Neupane Law House. All Rights Reserved. Kathmandu, Nepal</p>
     </footer>
 
 </body>
